@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="fitstyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fitness Tracker</h1>
+        <div class="input-section">
+            <input type="text" id="exerciseName" placeholder="Exercise Name">
+            <input type="number" id="exerciseDuration" placeholder="Duration (min)">
+            <button onclick="addExercise()">Add Exercise</button>
+        </div>
+        <div class="tracker-section">
+            <h2>Today's Exercises</h2>
+            <ul id="exerciseList"></ul>
+            <p>Total Duration: <span id="totalDuration">0</span> min</p>
+        </div>
+    </div>
+    <script src="fitscript.js"></script>
+</body>
+</html>

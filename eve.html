@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <link rel="stylesheet" href="evestyle.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Event Management System</h1>
+        <div class="form-container">
+            <input type="text" id="eventName" placeholder="Event Name">
+            <input type="date" id="eventDate">
+            <textarea id="eventDescription" placeholder="Event Description"></textarea>
+            <button id="submit" class="button">Add Event</button>
+            <button id="update" class="button hidden">Update Event</button>
+            <button id="cancel" class="button hidden">Cancel</button>
+        </div>
+
+        <table id="eventTable">
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="output">
+                <!-- Event rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="evescript.js"></script>
+</body>
+</html>

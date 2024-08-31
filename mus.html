@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Platform</title>
+    <link rel="stylesheet" href="musstyle.css">
+</head>
+<body>
+    <div class="music-container">
+        <h1>My Music Platform</h1>
+        <div class="player">
+            <div class="song-info">
+                <h2 id="songTitle">Select a Song</h2>
+            </div>
+            <audio id="audioPlayer" controls>
+                <source id="audioSource" src="" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="controls">
+                <button onclick="prevSong()">&#9664;&#9664; Prev</button>
+                <button onclick="playPause()">Play</button>
+                <button onclick="nextSong()">Next &#9654;&#9654;</button>
+            </div>
+            <div class="volume-control">
+                <label for="volumeSlider">Volume: </label>
+                <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1" onchange="changeVolume(this.value)">
+            </div>
+        </div>
+        <div class="song-list">
+            <ul>
+                <li onclick="selectSong(0)">Song 1 - Artist 1</li>
+                <li onclick="selectSong(1)">Song 2 - Artist 2</li>
+                <li onclick="selectSong(2)">Song 3 - Artist 3</li>
+            </ul>
+        </div>
+    </div>
+    <script src="musscript.js"></script>
+</body>
+</html>
